@@ -1,14 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fuente de soda</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="estilo.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" 
 </head>
 <body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                      <img src="img/logo.png" alt="Logo Fuente Suiza" />
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Carta
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Pizzas</a></li>
+                          <li><a class="dropdown-item" href="#">Hamburguesas</a></li>                          
+                          <li><a class="dropdown-item" href="#">Bebestibles</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sucursales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        
+        <section id="carrusel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/photo-1513104890138-7c749659a591.jfif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/como_hacer_un_coctel_old_fashioned_51424_orig.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/big-sandwich-hamburger-with-juicy-beef-burger-cheese-tomato-and-red-onion-on-wooden-table.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+
+          <section id="testimonios">
+            <div class="row">
+                <div class="col-xs-12 col-lg-4 text-center">
+                  <img class="testimonio" src="img/persona1.jpg" alt="Juan Perez" />
+                  <h2>Juan Pérez</h2>
+                  <p>
+                    Lorem ipsum dolor asit atme consequeum.
+                  </p>
+                  <span class="puntuacion">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </div><!-- END column1 -->
+                <div class="col-xs-12 col-lg-4 text-center">
+                  <img class="testimonio" src="img/persona2.jpg" alt="Sofía Pérez" />
+                  <h2>Sofía Pérez</h2>
+                  <p>
+                    Lorem ipsum dolor asit atme consequeum.
+                  </p>
+                  <span class="puntuacion">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </div><!-- END column2 -->
+                <div class="col-xs-12 col-lg-4 text-center">
+                  <img class="testimonio" src="img/persona3.jpg" alt="María Soto" />
+                  <h2>María Soto</h2>
+                  <p>
+                    Lorem ipsum dolor asit atme consequeum.
+                  </p>
+                  <span class="puntuacion">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                </div><!-- END column3 -->
+            </div>
+          </section>
+        <div class="container">
+          <footer class="bg-dark pt-3 pb-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <div class="p-2 ps-5">
+                    <h3 class="text-white">Sobre nosotros</h3>
+                    <p class="text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </p>
+                  </div>                  
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="p-2 text-center">
+                    <h3 class="ps-4 text-white text-center">Menú</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Inicio</a>
+                      </li>
+                      <li>
+                        <a href="#">Nosotros</a>
+                      </li>
+                      <li>
+                        <a href="#">Carta</a>
+                      </li>
+                      <li>
+                        <a href="#">Historia</a>
+                      </li>
+                      <li>
+                        <a href="#">Sucursales</a>
+                      </li>
+                      <li>
+                        <a href="#">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>                  
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="p-2">
+                    <h3 class="text-white">Visítanos</h3>
+                    <p class="text-white">
+                      Volcán Llaima 0620, Providencia, Santiago<br />
+                      Tel: 56 2 2464 4798<br />
+                    </p>
+                    <hr class="text-white" />
+                    <p class="text-white">
+                      Av. Alemania 765, Temuco<br />
+                      Tel: 56 9 2345 4378<br />         
+                    </p>  
+                  </div>                                           
+                </div>
+                <hr class="text-white"/>
+                <div class="row">
+                  <div class="col-sm">
+                    <p class="text-center text-white"> &copy; 2022 Todos los derechos reservados</p>
+                  </div>     
+              
+            
+              </div> 
+        </div>   
+          </footer>
+      </div>          
+    </div>
+   
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
+        
