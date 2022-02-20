@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario contacto</title>
+    <link href="formcontacto.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="img/logo (1).png" alt="Logo Fuente Alemana" />
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Carta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Pizzas</a></li>
+                      <li><a class="dropdown-item" href="#">Hamburguesas</a></li>                          
+                      <li><a class="dropdown-item" href="#">Bebestibles</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+</div>
+
+
+    <div class="container mt-5">
+
+        <header></header>
+
+        <main>
+          <h1 class="mb-5">¡Llena el formulario y nos pondremos en contacto!</h1>
+
+          <form action="" id="formulario-contacto" class="row g-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div id="feedback-nombre" class="">                    
+                </div>                  
+              </div>
+
+              
+              <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+                <div id="feedback-apellido" class="">
+              </div>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" required>
+                  <div id="feedback-email" class="">
+              </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="telefono" required>
+                  <div id="feedback-telefono" class="">
+                </div>
+                </div>
+
+              <div class="col-md-12">
+                <label for="sucursal" class="form-label">Sucursal</label>
+                <select class="form-select" id="sucursal" required>
+                  <option value="">Escoge...</option>
+                  <option value="1">Santiago</option>
+                  <option value="2">Temuco</option>
+                </select>
+                <div id="feedback-sucursal" class="">
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <p>Motivo de contacto:</p>
+                  <div class="form-check">
+                      <input value="1" type="radio" class="form-check-input" id="motivo-consulta" name="motivo-consulta" required>
+                      <label class="form-check-label" for="motivo-consulta">Felicitación</label>
+                  </div>
+                  <div class="form-check">
+                      <input value="2" type="radio" class="form-check-input" id="motivo-consulta" name="motivo-consulta">
+                      <label class="form-check-label" for="motivo-consulta">Reclamo</label>
+                  </div>
+                    <div class="form-check mb-3">
+                      <input value="3" type="radio" class="form-check-input" id="motivo-consulta" name="motivo-consulta">
+                      <label class="form-check-label" for="motivo-consulta">Consulta</label>
+                      <div class="invalid-feedback">More example invalid feedback text</div>
+                    </div>
+              </div>
+              <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" placeholder="Escribe un mensaje" required></textarea>
+                  <div class="">
+                  </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" id="submit" class="btn btn-primary" onclick="redireccionar()">Enviar</button>
+              </div>
+            </form>
+
+            <footer></footer>
+        </main>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="formcontacto.js"></script>
+    
+</body>
+</html>
