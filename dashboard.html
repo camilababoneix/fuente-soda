@@ -7,9 +7,42 @@
     <title>Tabla de contacto</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head> 
-<h1 class="text-center p-5">Información de contactos realizados</h1>
 <body>
-    <div class="container">   
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <img src="img/logo (1).png" alt="Logo Fuente Alemana">
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary"></a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Clientes</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Inventario</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Facturas y boletas</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Solicitudes</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Asistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Solicitudes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                </ul>
+          </div>
+        </div>
+      </header>
+
+    <div class="container">
+        <h1 class="text-center p-5">Información de contactos realizados</h1>   
         <div class="table-responsive">    
         <table class="table table-dark table-striped">
             <thead>
@@ -27,58 +60,62 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Natalia</td>
+                    <td>Burgos</td>
+                    <td>nburgos@123.cl</td>
+                    <td>984624152</td>
+                    <td>Santiago</td>
+                    <td>Reclamo</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Carlos</td>
+                    <td>Saravia</td>
+                    <td>carlos.saravia@123.cl</td>
+                    <td>984724199</td>
+                    <td>Santiago</td>
+                    <td>Consulta</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td colspan="2"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Michelle</td>
+                    <td>Díaz</td>
+                    <td>md_jj@123.cl</td>
+                    <td>947251643</td>
+                    <td>Temuco</td>
+                    <td>Consulta</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th scope="row">4</th>
+                    <td>Ignacio</td>
+                    <td>Riquelme</td>
+                    <td>ignacio.r@123.cl</td>
+                    <td>988771265</td>
+                    <td>Temuco</td>
+                    <td>Reclamo</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th scope="row">5</th>
+                    <td>Ana</td>
+                    <td>Rodríguez</td>
+                    <td>ana_r@123.cl</td>
+                    <td>999812543</td>
+                    <td>Temuco</td>
+                    <td>Felicitación</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
                 </tr>
             </tbody>
                 
         </table>
         </div> 
     </div>
+
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="formularioContacto/contacto.js"></script>
+<script src="formcontacto.js"></script>
 </body>
 </html>
